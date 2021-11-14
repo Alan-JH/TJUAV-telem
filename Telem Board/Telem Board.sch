@@ -165,8 +165,6 @@ F 3 "" H 5550 2550 50  0001 C CNN
 	1    5550 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 2550 5250 2550
 Connection ~ 5550 2550
 $Comp
 L power:GNDD #PWR07
@@ -190,8 +188,6 @@ F 3 "" H 5250 3650 50  0001 C CNN
 	1    5250 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 3650 5250 3650
 Connection ~ 5550 3650
 Connection ~ 5250 3650
 $Comp
@@ -539,7 +535,7 @@ U 1 1 61908367
 P 8600 750
 F 0 "H1" H 8700 796 50  0000 L CNN
 F 1 "MountingHole" H 8700 705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 8600 750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 8600 750 50  0001 C CNN
 F 3 "~" H 8600 750 50  0001 C CNN
 	1    8600 750 
 	1    0    0    -1  
@@ -550,66 +546,30 @@ U 1 1 61908C54
 P 9350 750
 F 0 "H2" H 9450 796 50  0000 L CNN
 F 1 "MountingHole" H 9450 705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9350 750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 9350 750 50  0001 C CNN
 F 3 "~" H 9350 750 50  0001 C CNN
 	1    9350 750 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 61909B9E
-P 8600 1000
-F 0 "H3" H 8700 1046 50  0000 L CNN
-F 1 "MountingHole" H 8700 955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 8600 1000 50  0001 C CNN
-F 3 "~" H 8600 1000 50  0001 C CNN
-	1    8600 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 6190AC4C
-P 9350 1000
-F 0 "H4" H 9450 1046 50  0000 L CNN
-F 1 "MountingHole" H 9450 955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9350 1000 50  0001 C CNN
-F 3 "~" H 9350 1000 50  0001 C CNN
-	1    9350 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 61914F1A
+L Device:C C8
+U 1 1 61915AD3
 P 6350 2700
-F 0 "C9" H 6465 2746 50  0000 L CNN
+F 0 "C8" H 6465 2746 50  0000 L CNN
 F 1 "1uF" H 6465 2655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6388 2550 50  0001 C CNN
 F 3 "~" H 6350 2700 50  0001 C CNN
 	1    6350 2700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C8
-U 1 1 61915AD3
-P 4250 2700
-F 0 "C8" H 4365 2746 50  0000 L CNN
-F 1 "1uF" H 4365 2655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4288 2550 50  0001 C CNN
-F 3 "~" H 4250 2700 50  0001 C CNN
-	1    4250 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5250 2550 4250 2550
-Connection ~ 5250 2550
-Wire Wire Line
-	4250 2850 4250 3650
-Wire Wire Line
-	4250 3650 5250 3650
-Wire Wire Line
-	5550 2550 6350 2550
+	6350 2550 5550 2550
 Wire Wire Line
 	6350 2850 6350 3650
 Wire Wire Line
-	6350 3650 5550 3650
+	5250 2550 5550 2550
+Wire Wire Line
+	5550 3650 6350 3650
+Wire Wire Line
+	5250 3650 5550 3650
 $EndSCHEMATC

@@ -262,8 +262,6 @@ F 3 "~" H 2750 1000 50  0001 C CNN
 	1    2750 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 1000 3650 1000
 $Comp
 L power:GNDD #PWR01
 U 1 1 61928A37
@@ -623,8 +621,6 @@ F 3 "~" H 4500 1000 50  0001 C CNN
 	1    4500 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 1000 5400 1000
 $Comp
 L power:GNDD #PWR013
 U 1 1 6191567C
@@ -659,4 +655,30 @@ Wire Wire Line
 Connection ~ 5400 1700
 Text Label 4750 2850 2    50   ~ 0
 CH1
+$Comp
+L Device:Fuse F1
+U 1 1 61917A23
+P 3500 1000
+F 0 "F1" V 3303 1000 50  0000 C CNN
+F 1 "125mA" V 3394 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3430 1000 50  0001 C CNN
+F 3 "~" H 3500 1000 50  0001 C CNN
+	1    3500 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F2
+U 1 1 61919427
+P 5250 1000
+F 0 "F2" V 5053 1000 50  0000 C CNN
+F 1 "125mA" V 5144 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5180 1000 50  0001 C CNN
+F 3 "~" H 5250 1000 50  0001 C CNN
+	1    5250 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 1000 3350 1000
+Wire Wire Line
+	4700 1000 5100 1000
 $EndSCHEMATC
